@@ -1,0 +1,26 @@
+extends layout
+
+block content
+                nav.navbar.navbar-inverse( role="navigation" )(style='background-color:white;')
+                 .navbar-header
+                  button.navbar-toggle.collapsed( type="button", data-toggle="collapse", data-target="#navbar-inverse", aria-expanded="false", aria-controls="navbar",background-color= '#0066ff')
+                   span.sr-only Toggle navigation
+                   span.icon-bar
+                   span.icon-bar
+                   span.icon-bar
+                  a.navbar-brand(href="/",active='true')(style='color:black;font-size:20px;font-weight:bold;') Home
+                  a.navbar-brand(href="/student_login")(style='color:black;font-size:20px;font-weight:bold;') Sign In
+                  a.navbar-brand(href="/student_signup")(style='color:black;font-size:20px;font-weight:bold;') Sign Up
+                  
+
+                .container
+                 .row
+                  .col-md-6.col-md-offset-3
+                   h3.display-4.m-b-2 Welcome to Course Management System!
+                   h2.quote(style="font-family:Times New Roman;font-weight:bold;color:") Never stop learning, because life never stops teaching!
+
+                .container
+                 .row
+                  .col-md-6.col-md-offset-2
+                   .image-block
+                    img.className#IdName(src="/images/bg0.jpg" alt="Image Title")(style='width:700px;height:350px;margin-top:10px;')
